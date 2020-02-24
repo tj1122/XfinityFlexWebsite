@@ -1,0 +1,26 @@
+/* =============
+    Typography
+============= */
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(0,0,0,0.4);
+  font-size: rem-calc(10);
+  @include xl {
+    font-size: rem-calc(12);
+  };
+}

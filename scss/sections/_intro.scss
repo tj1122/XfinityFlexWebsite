@@ -1,0 +1,111 @@
+/* =============
+    Intro
+============= */
+#intro {
+  padding: 30px 36px;
+  text-align: center;
+  @include md {
+    padding: 0 80px;
+  }
+  @include xl {
+    padding: 0 144px;
+  }
+
+  section {
+    position: relative;
+    font-weight: 300;
+    padding-bottom: 20px;
+    @include xl {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas: ". text .";
+      grid-template-rows: 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      height: 300px;
+    };
+
+    img {
+      display: none;
+      justify-self: center;
+      z-index: -1;
+      @include xl {
+        display: unset;
+      }
+    };
+
+    div {
+      grid-area: text;
+      align-self: center;
+      padding: 0 5px;
+      @include xl {
+        padding: 0 100px;
+      };
+
+      p {
+        font-size: rem-calc(16);
+        padding-bottom: 20px;
+        @include md {
+          font-size: rem-calc(26);
+          padding-top: 40px;
+        };
+        @include xl {
+          font-size: rem-calc(22);
+          padding-top: 5px;
+        };
+      }
+
+      h5 {
+        font-weight: 300;
+        font-style: italic;
+        color: rgba(0,0,0,0.4);
+        font-size: rem-calc(10);
+        @include md {
+          font-size: rem-calc(20);
+        };
+        @include xl {
+          font-size: rem-calc(12);
+        };
+      }
+    }
+  }
+
+  aside {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "frames_left tv frames_right";
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+
+    img:nth-child(2) {
+      height: 240px;
+      grid-area: tv;
+      justify-self: center;
+      @include md {
+        height: 481px;
+      }
+      @include xl {
+        height: 481px;
+      }
+    };
+
+    img:first-child {
+      display: none;
+      justify-self: center;
+      @include xl {
+        display: unset;
+      }
+    };
+
+    img:last-child {
+      display: none;
+      justify-self: center;
+      @include xl {
+        display: unset;
+      }
+    };
+  }
+}

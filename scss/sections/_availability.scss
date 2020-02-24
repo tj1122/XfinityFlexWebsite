@@ -1,0 +1,53 @@
+/* =============
+    Availability
+============= */
+#availability {
+  padding: 30px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include xl {
+    padding: 40px 144px;
+  }
+
+  h2 {
+    font-size: rem-calc(24);
+    text-align: center;
+    @include md {
+      font-size: rem-calc(30);
+    }
+    @include xl {
+      font-size: rem-calc(24);
+    }
+  }
+
+  h5 {
+    font-size: rem-calc(10);
+    @include md {
+      font-size: rem-calc(20);
+    };
+    @include lg {
+      font-size: rem-calc(12);
+    };
+    @include xl {
+      font-size: rem-calc(12);
+    };
+  }
+
+  button {
+    border: 1px Transparent solid;
+    background-color: Transparent;
+    text-decoration: none;
+    margin: 30px 0 50px;
+
+    a {
+      border: 1px $xfintiyblue solid;
+      padding: 14px 12px;
+      text-align: center;
+      color: $xfintiyblue;
+      background-color: Transparent;
+      text-decoration: none;
+      border-radius: 24px;
+    }
+  }
+}

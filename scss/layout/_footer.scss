@@ -1,0 +1,41 @@
+/* =============
+    Footer
+============= */
+
+footer {
+  background-color: black;
+  height: 85px;
+  padding: 20px 36px 0;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  div {
+    color: $white;
+
+    h4 {
+      align-self: center;
+      font-weight: 300;
+      font-size: rem-calc(10);
+    }
+
+    img {
+      align-self: center;
+    }
+  }
+
+  aside {
+    justify-self: flex-end;
+    align-self: center;
+
+    img {
+      padding-left: 10px;
+    }
+  }
+  @include md {
+    padding: 0 80px;
+  }
+  @include xl {
+    padding: 0 144px;
+  }
+}

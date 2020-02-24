@@ -1,0 +1,54 @@
+/* =============
+    Header
+============= */
+
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  > div {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left right";
+    padding: 10px 36px;
+
+    @include md {
+      padding: 12px 80px;
+    }
+    @include xl {
+      padding: 16px 144px;
+    }
+
+    img {
+      grid-area: left;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    #nav-container {
+      grid-area: right;
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        height: 36px;
+        @include md {
+          height: 40px;
+        }
+        @include xl {
+          height: 44px;
+        }
+
+        #click-zone,
+        #click-bell,
+        #click-bag,
+        #click-user {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

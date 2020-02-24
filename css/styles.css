@@ -1,0 +1,1304 @@
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+/* =============
+    Variables
+============= */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* =============
+    Base
+============= */
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+body .content {
+  overflow-x: hidden;
+}
+
+.section-content {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .section-content {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 576px) {
+  .section-content {
+    padding: 0 50px;
+  }
+}
+
+.show-nav {
+  display: block;
+}
+
+/* =============
+    Typography
+============= */
+body {
+  font-family: "Muli", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.625rem;
+}
+@media (min-width: 1200px) {
+  h5 {
+    font-size: 0.75rem;
+  }
+}
+
+/* =============
+    Buttons
+============= */
+/* =============
+    Forms
+============= */
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+  box-shadow: none;
+}
+
+[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* =============
+    Navigation
+============= */
+nav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 50;
+  display: none;
+}
+@media (min-width: 768px) {
+  nav {
+    width: 60vw;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    width: 30vw;
+  }
+}
+nav img {
+  cursor: pointer;
+}
+nav > section {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+nav > section .nav-background {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -7px 0 23px -3px rgba(0, 0, 0, 0.7);
+}
+nav > section aside {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+nav > section aside h1 {
+  padding-bottom: 20px;
+}
+nav > section aside h2 {
+  width: 100%;
+}
+nav > section aside #description {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  justify-items: center;
+  align-items: center;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+nav > section aside #description img:nth-child(1) {
+  justify-self: flex-start;
+}
+nav > section aside #description div:nth-child(2) {
+  justify-self: flex-start;
+  padding-left: 5px;
+}
+nav > section aside #description div:nth-child(2) h2 {
+  font-size: 1.125rem;
+}
+nav > section aside #description div:nth-child(2) p {
+  font-size: 0.75rem;
+}
+nav > section aside #description div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav > section aside #description p:nth-child(4) {
+  justify-self: flex-end;
+  font-weight: bold;
+}
+nav > section aside ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-right: 40px;
+  padding-bottom: 30px;
+}
+nav > section aside ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+nav > section aside ul li p:nth-child(2) {
+  font-weight: bold;
+}
+nav > section aside ul hr {
+  width: 100%;
+}
+nav > section aside #button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+nav > section aside #button button {
+  border: 1px Transparent solid;
+  background-color: Transparent;
+  text-decoration: none;
+  text-align: center;
+}
+nav > section aside #button button a {
+  border: 1px Transparent solid;
+  padding: 14px 40px;
+  color: #fff;
+  background-color: #3887FC;
+  text-decoration: none;
+  border-radius: 28px;
+}
+nav > section .aside2 #description {
+  display: grid;
+  grid-template-columns: 1fr 4fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  justify-items: center;
+  align-items: center;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+nav > section .aside2 #description div:nth-child(3) img {
+  transform: rotate(45deg);
+}
+nav > section .aside3 #description {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  justify-items: center;
+  align-items: center;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+nav > section .aside3 button {
+  border: 1px Transparent solid;
+  background-color: Transparent;
+  text-decoration: none;
+  text-align: center;
+}
+nav > section .aside3 button a {
+  border: 1px Transparent solid;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #3887FC;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* =============
+    Header
+============= */
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header > div {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "left right";
+  padding: 10px 36px;
+}
+@media (min-width: 768px) {
+  header > div {
+    padding: 12px 80px;
+  }
+}
+@media (min-width: 1200px) {
+  header > div {
+    padding: 16px 144px;
+  }
+}
+header > div img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  display: flex;
+  justify-content: flex-start;
+}
+header > div #nav-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  display: flex;
+  justify-content: flex-end;
+}
+header > div #nav-container svg {
+  height: 36px;
+}
+@media (min-width: 768px) {
+  header > div #nav-container svg {
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  header > div #nav-container svg {
+    height: 44px;
+  }
+}
+header > div #nav-container svg #click-zone,
+header > div #nav-container svg #click-bell,
+header > div #nav-container svg #click-bag,
+header > div #nav-container svg #click-user {
+  cursor: pointer;
+}
+
+/* =============
+    Footer
+============= */
+footer {
+  background-color: black;
+  height: 85px;
+  padding: 20px 36px 0;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer div {
+  color: #fff;
+}
+footer div h4 {
+  align-self: center;
+  font-weight: 300;
+  font-size: 0.625rem;
+}
+footer div img {
+  align-self: center;
+}
+footer aside {
+  justify-self: flex-end;
+  align-self: center;
+}
+footer aside img {
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding: 0 144px;
+  }
+}
+
+/* =============
+    Heroes
+============= */
+#hero {
+  background-image: url("../img/hero/hero_bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.8fr 4fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-top: 65px;
+  justify-items: center;
+  align-content: center;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 100vh;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    margin-top: 80px;
+    height: 100vh;
+  }
+}
+#hero div {
+  display: grid;
+  justify-items: center;
+}
+#hero div img {
+  height: 62px;
+}
+@media (min-width: 768px) {
+  #hero div img {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero div img {
+    padding-top: 0;
+  }
+}
+#hero h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #hero h1 {
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero h1 {
+    font-size: 2.625rem;
+  }
+}
+#hero h5 {
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+@media (min-width: 768px) {
+  #hero h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero h5 {
+    font-size: 1rem;
+  }
+}
+#hero aside {
+  color: #3887FC;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  align-self: center;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #hero aside {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero aside {
+    font-size: 1rem;
+  }
+}
+
+/* =============
+    Intro
+============= */
+#intro {
+  padding: 30px 36px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #intro {
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro {
+    padding: 0 144px;
+  }
+}
+#intro section {
+  position: relative;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  #intro section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". text .";
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    height: 300px;
+  }
+}
+#intro section img {
+  display: none;
+  justify-self: center;
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  #intro section img {
+    display: unset;
+  }
+}
+#intro section div {
+  grid-area: text;
+  align-self: center;
+  padding: 0 5px;
+}
+@media (min-width: 1200px) {
+  #intro section div {
+    padding: 0 100px;
+  }
+}
+#intro section div p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #intro section div p {
+    font-size: 1.625rem;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro section div p {
+    font-size: 1.375rem;
+    padding-top: 5px;
+  }
+}
+#intro section div h5 {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.625rem;
+}
+@media (min-width: 768px) {
+  #intro section div h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  #intro section div h5 {
+    font-size: 0.75rem;
+  }
+}
+#intro aside {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "frames_left tv frames_right";
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+#intro aside img:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  height: 240px;
+  grid-area: tv;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  #intro aside img:nth-child(2) {
+    height: 481px;
+  }
+}
+@media (min-width: 1200px) {
+  #intro aside img:nth-child(2) {
+    height: 481px;
+  }
+}
+#intro aside img:first-child {
+  display: none;
+  justify-self: center;
+}
+@media (min-width: 1200px) {
+  #intro aside img:first-child {
+    display: unset;
+  }
+}
+#intro aside img:last-child {
+  display: none;
+  justify-self: center;
+}
+@media (min-width: 1200px) {
+  #intro aside img:last-child {
+    display: unset;
+  }
+}
+
+/* =============
+    Included
+============= */
+#included {
+  background-image: url("../img/included/included_bg.jpg");
+  background-size: 400% 140%;
+  background-position: center top;
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 30px 36px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-areas: "..." "text" "...";
+}
+@media (min-width: 1200px) {
+  #included {
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". text .";
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+  #included > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+#included #imgeleft {
+  display: none;
+}
+@media (min-width: 1200px) {
+  #included #imgeleft {
+    display: unset;
+  }
+}
+#included #imgright {
+  display: none;
+}
+@media (min-width: 1200px) {
+  #included #imgright {
+    display: unset;
+  }
+}
+#included #img2 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  #included #img2 {
+    display: unset;
+  }
+}
+#included p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #included p {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #included p {
+    font-size: 1rem;
+  }
+}
+#included div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: text;
+  display: grid;
+}
+@media (min-width: 1200px) {
+  #intro section div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #included div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #included > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+@media (min-width: 1200px) {
+  #included div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 5fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+}
+#included div h2 {
+  display: grid;
+  align-content: flex-end;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  #included div h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #included div h2 {
+    font-size: 1.5rem;
+  }
+}
+#included div ul {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+@media (min-width: 1200px) {
+  #included div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+}
+#included div ul li {
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  #included div ul li {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #included div ul li {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  #included div ul li img {
+    height: 85px;
+  }
+}
+@media (min-width: 1200px) {
+  #included div ul li img {
+    height: 60px;
+  }
+}
+#included div p:nth-child(4) {
+  padding-top: 40px;
+}
+
+/* =============
+    Prices
+============= */
+#prices {
+  background-image: url("../img/prices/prices_bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 250vh;
+  padding: 30px 36px;
+}
+@media (min-width: 768px) {
+  #prices {
+    height: 200vh;
+  }
+}
+@media (min-width: 1200px) {
+  #prices {
+    height: 100vh;
+    padding: 40px 144px;
+  }
+}
+#prices div {
+  justify-self: center;
+}
+#prices div h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  #prices div h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #prices div h2 {
+    font-size: 1.5rem;
+  }
+}
+#prices div p {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #prices div p {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #prices div p {
+    font-size: 1rem;
+  }
+}
+#prices p {
+  padding-bottom: 80px;
+  font-weight: 200;
+  text-align: center;
+}
+#prices h2 {
+  text-align: center;
+}
+#prices section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 30px;
+}
+@media (min-width: 768px) {
+  #prices section {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #prices section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 100px;
+  }
+}
+#prices section div {
+  border: 0;
+  background-color: #fff;
+  height: 461px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+#prices section div h2 {
+  background-color: #E4E4E4;
+  padding: 15px 0;
+  border-radius: 12px 12px 0 0;
+  font-size: 1rem;
+  text-align: center;
+}
+#prices section div h1 {
+  font-size: 6.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+#prices section div p {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+#prices section div h3 {
+  padding: 0 50px 10px;
+}
+#prices section div ul {
+  padding: 0 50px 30px;
+}
+#prices section div ul img {
+  padding-right: 5px;
+}
+#prices section div ul li {
+  padding: 0 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#prices section div button {
+  border: 1px Transparent solid;
+  background-color: Transparent;
+  text-decoration: none;
+}
+#prices section div button a {
+  border: 1px Transparent solid;
+  padding: 14px 12px;
+  color: #fff;
+  background-color: #3887FC;
+  text-decoration: none;
+  border-radius: 24px;
+}
+#prices h5 {
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.625rem;
+}
+@media (min-width: 768px) {
+  #prices h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  #prices h5 {
+    font-size: 0.75rem;
+  }
+}
+
+/* =============
+    Availability
+============= */
+#availability {
+  padding: 30px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  #availability {
+    padding: 40px 144px;
+  }
+}
+#availability h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #availability h2 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1200px) {
+  #availability h2 {
+    font-size: 1.5rem;
+  }
+}
+#availability h5 {
+  font-size: 0.625rem;
+}
+@media (min-width: 768px) {
+  #availability h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #availability h5 {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  #availability h5 {
+    font-size: 0.75rem;
+  }
+}
+#availability button {
+  border: 1px Transparent solid;
+  background-color: Transparent;
+  text-decoration: none;
+  margin: 30px 0 50px;
+}
+#availability button a {
+  border: 1px #3887FC solid;
+  padding: 14px 12px;
+  text-align: center;
+  color: #3887FC;
+  background-color: Transparent;
+  text-decoration: none;
+  border-radius: 24px;
+}

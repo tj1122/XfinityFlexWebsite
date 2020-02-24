@@ -1,0 +1,80 @@
+/* =============
+    Heroes
+============= */
+#hero {
+  background-image: url("../img/hero/hero_bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.8fr 4fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-top: 65px;
+  justify-items: center;
+  align-content: center;
+  @include md {
+    height: 100vh;
+    margin-top: 70px;
+  }
+  @include xl {
+    margin-top: 80px;
+    height: 100vh;
+  }
+
+  div {
+    display: grid;
+    justify-items: center;
+
+    img {
+      height: 62px;
+      @include md {
+        padding-top: 30px;
+      }
+      @include xl {
+        padding-top: 0;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: rem-calc(24);
+    color: $white;
+    @include md {
+      font-size: rem-calc(42);
+    }
+    @include xl {
+      font-size: rem-calc(42);
+    }
+  }
+
+  h5 {
+    font-weight: 300;
+    font-size: rem-calc(16);
+    color: rgba(255,255,255,0.4);
+    @include md {
+      font-size: rem-calc(20);
+    }
+    @include xl {
+      font-size: rem-calc(16);
+    }
+  }
+
+  aside {
+    color: $xfintiyblue;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    align-self: center;
+    cursor: pointer;
+    @include md {
+      font-size: rem-calc(26);
+    }
+    @include xl {
+      font-size: rem-calc(16);
+    }
+  }
+}
